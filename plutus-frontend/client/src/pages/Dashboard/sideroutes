@@ -1,0 +1,110 @@
+// import React from 'react';
+// import { AiFillHome, MdOutlineDashboard, BiTransfer, IoIosCard, BsSave, FiSettings, MdLogout } from 'react-icons/all';
+// import { Link } from 'react-router-dom';
+// import { HiMenuAlt3 } from 'react-icons/hi';
+
+// const UserSidebar = () => {
+//   const userMenus = [
+//     { name: 'Home', link: '/dashboard/home', icon: AiFillHome },
+//     { name: 'Transfer', link: '/dashboard/transfer', icon: MdOutlineDashboard },
+//     { name: 'Transactions', link: '/dashboard/transactions', icon: BiTransfer },
+//     { name: 'Accounts and Cards', link: '/dashboard/accountsandcards', icon: IoIosCard },
+//     { name: 'Investment', link: '/dashboard/investment', icon: BsSave },
+//     { name: 'Settings', link: '/dashboard/settings', icon: FiSettings, margin: true },
+//     { name: 'Log out', link: '/dashboard/logout', icon: MdLogout },
+//   ];
+
+//   return (
+//     <div>
+//       {userMenus.map((menu: any, i: any) => (
+//         <Link
+//           to={menu.link}
+//           key={i}
+//           className={`${menu.margin && 'mt-96'} group flex items-center text-sm text-left font-medium p-2 hover:text-black rounded-md`}
+//         >
+//           <div>{React.createElement(menu.icon, { size: '20' })}</div>
+//           <h2
+//             style={{ transitionDelay: `${i + 3}00ms` }}
+//             className={`whitespace-pre duration-500 ${!open && 'opacity-0 translate-x-28 overflown-hidden m-0'}`}
+//           >
+//             {menu.name}
+//           </h2>
+//           <h2
+//             className={`${open() && 'hidden'} absolute left-48 bg-white font-semibold whitespace-pre text-gray-900 rounded-md drop-shadow-lg px-0 py-0 w-0 overflow-hidden group-hover:px-2 group-hover:py-1 group-hover:left-14 group-hover:duration-300 group-hover:w-fit `}
+//           >
+//             {menu.name}
+//           </h2>
+//         </Link>
+//       ))}
+//     </div>
+//   );
+// };
+
+
+
+// const AdminSidebar = () => {
+//   const adminMenus = [
+//     { name: 'Home', link: '/dashboard/home', icon: AiFillHome },
+//     { name: 'Users', link: '/dashboard/users', icon: BiTransfer },
+//     { name: 'Companies', link: '/dashboard/companies', icon: MdOutlineDashboard },
+//     { name: 'Transactions', link: '/dashboard/transactions', icon: BiTransfer },
+//     { name: 'Log out', link: '/', icon: MdLogout },
+//   ];
+
+//   return (
+//     <div>
+//       {adminMenus.map((menu: any) => (
+//         <Link
+//           to={menu.link}
+//           key={i}
+//           className={`group flex items-center text-sm text-left font-medium p-2 hover:text-black rounded-md`}>
+//           <div>{React.createElement(menu.icon, { size: '20' })}</div>
+//           <h2
+//             style={{ transitionDelay: `${i + 3}00ms` }}
+//             className={`whitespace-pre duration-500 ${!open && 'opacity-0 translate-x-28 overflown-hidden m-0'}`}
+//           >
+//             {menu.name}
+//           </h2>
+//         </Link>
+//       ))}
+//     </div>
+//   );
+// };
+
+
+// const CompanySidebar = () => {
+//   const companyMenus = [
+//     { name: 'Home', link: '/dashboard/home', icon: AiFillHome },
+//     { name: 'Transactions', link: '/dashboard/transactions', icon: BiTransfer },
+//     { name: 'Profile', link: '/dashboard/profile', icon: MdOutlineDashboard },
+//     { name: 'Log out', link: '/', icon: MdLogout },
+//   ];
+
+//   return (
+//      <div>
+//       {companyMenus.map((menu: any, i: any) => (
+//         <Link
+//           to={menu.link}
+//           key={i}
+//           className={`group flex items-center text-sm text-left font-medium p-2 hover:text-black rounded-md`}
+//         >
+//           <div>{React.createElement(menu.icon, { size: '20' })}</div>
+//           <h2
+//             style={{ transitionDelay: `${i + 3}00ms` }}
+//             className={`whitespace-pre duration-500 ${!open && 'opacity-0 translate-x-28 overflown-hidden m-0'}`}
+//           >
+//             {menu.name}
+//           </h2>
+//         </Link>
+//       ))}
+//     </div>
+//   );
+// };
+
+
+
+
+
+
+
+// export { UserSidebar, AdminSidebar, CompanySidebar };
